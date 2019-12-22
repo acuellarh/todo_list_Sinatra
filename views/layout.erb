@@ -1,14 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf8">
   <title> To Do List WebApp  </title>
+  <link href="/reset.css" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
 </head>
 <body>
-
-  <%= yield  %>
-
+  <header>
+    <hgroup>
+      <h1>Mi lista de tareas por hacer</h1>
+    </hgroup>
+  </header>
+ 
+  <div id="main">
+    <%= yield %>
+  </div>
+ 
+  <footer>
+    <p><small>An app de <a href="http://173.254.57.157/~cuellarc/CV-AlejandroCuellar/">acuellarh</a>.</small></p>
+  </footer>
 </body>
 </html>

@@ -1,4 +1,12 @@
 
+<section id="add">
+  <form action="/new" method="post">  
+    <textarea name="content" placeholder="Anotar tarea&hellip;"></textarea>
+    <button type="submit" class="btn">Registrar</button>
+  </form>
+</section>
+
+
 <ul id="todo-list" class="unstyled">
     <% @tasks.each do |task| %>
       <li id="<%=task["id"]%>">
@@ -13,5 +21,4 @@
     <% end %>
 </ul>
 
-
-<a href="/new" class="btn btn-primary">Add todo item</a>
+<%# <a href="/new" class="btn btn-primary">Add todo item</a> %>
