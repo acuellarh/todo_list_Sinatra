@@ -1,0 +1,17 @@
+
+<ul id="todo-list" class="unstyled">
+    <% @tasks.each do |task| %>
+      <li id="<%=task["id"]%>">
+        <span class="item"> <%= task %></span>             
+        <span class="pull-right">
+          <p><a href="/<%=task["id"]%>/complete">Completar &#8623;</a></p> 
+        </span>
+        <span class="pull-right">
+         <p><a href="/<%=task["id"]%>/delete">Delete</a></p>
+        </span>
+      </li>
+    <% end %>
+</ul>
+
+
+<a href="/new" class="btn btn-primary">Add todo item</a>

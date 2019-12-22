@@ -1,0 +1,10 @@
+<% if @task %>
+  <p>Estas seguro de eliminar la tarea: <em>"<%= @task["title"]%>"</em>?</p>
+  <form action="/<%= @task["id"] %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Yes, Delete It!">
+    <a href="/">Cancelar</a>
+  </form>
+<% else %>
+  <p>Tarea no encontrada.</p>
+<% end %>
