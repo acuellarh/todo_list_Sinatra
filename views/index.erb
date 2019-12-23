@@ -6,26 +6,22 @@
 </section>
 
 
-
 <% @tasks.each do |task| %>
   <article <%= 'class="complete"' if task["done"] == true %>>  
     <p>
-      <%= task["title"] %>
+      <%= task["title"] %>    
     </p>
     <p class="links">
       <a href="/<%=task["id"]%>/complete"> Hecho!&#8623;</a>
     </p>
-    <p class="meta">Created: <%= task["created_at"]%></p>
-
-
-    <span class="pull-right">
+    <p class="meta">Created: <%= task["created_at"]%></p>   
     <p><a href="/<%=task["id"]%>/delete">Delete</a></p>
-    </span>
-
   </article>  
 <% end %>
 
 
 
 
-<%# <a href="/new" class="btn btn-primary">Add todo item</a> %>
+
+
+
